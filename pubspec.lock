@@ -53,10 +53,10 @@ packages:
     dependency: "direct main"
     description:
       name: cronet_http
-      sha256: "976e53c8d34ccc7b497e364569228a4167236e1b569e35c51335535ff65db76d"
+      sha256: a38ffbb49797ae1e0f774fc884d128a7023986b14a3165e1e39841f9f7e22137
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   cupertino_http:
     dependency: "direct main"
     description:

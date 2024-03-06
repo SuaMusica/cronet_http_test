@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     setupDownloadManager();
     setState(() {
-      for (var i = 0; i < 1000; i++) {
+      for (var i = 0; i < 100; i++) {
         final randomInt = Random.secure().nextInt(9999999);
         items.add(
           DownloaderItem(
@@ -86,6 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         );
         progress.add(0);
+      }
+      for (final item in items) {
+        Downloader.instance.enqueue(item: item);
       }
     });
     _subscription = progressDispatcher.stream.listen((e) {

@@ -59,7 +59,7 @@ class ChunkedDownloader {
         cacheMode: CacheMode.memory,
         userAgent: ua,
       );
-      return CronetClient.fromCronetEngine(engine);
+      return CronetClient.fromCronetEngine(engine, closeEngine: true);
     }
     if (Platform.isIOS || Platform.isMacOS) {
       final config = URLSessionConfiguration.ephemeralSessionConfiguration();
