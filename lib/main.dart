@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     setupDownloadManager();
     setState(() {
-      for (var i = 0; i < 100; i++) {
+      for (var i = 0; i < 10; i++) {
         final randomInt = Random.secure().nextInt(9999999);
         items.add(
           DownloaderItem(
