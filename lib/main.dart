@@ -7,6 +7,7 @@ import 'package:cronet_test/downloader/download_progress.dart';
 import 'package:cronet_test/downloader/downloader.dart';
 import 'package:cronet_test/downloader/downloader_item.dart';
 import 'package:flutter/material.dart';
+import 'package:restart_app/restart_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,6 +96,9 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         progress[e.taskId] = e.progress;
       });
+      if (progress.reduce((v, e) => v + e) == 1000) {
+        Restart.restartApp();
+      }
     });
   }
 

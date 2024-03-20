@@ -52,11 +52,12 @@ packages:
   cronet_http:
     dependency: "direct main"
     description:
-      name: cronet_http
-      sha256: a38ffbb49797ae1e0f774fc884d128a7023986b14a3165e1e39841f9f7e22137
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
+      path: "pkgs/cronet_http"
+      ref: upgrade-jni
+      resolved-ref: "6737d9d374d934711cf04b118dd41aba570eb4d2"
+      url: "https://github.com/dart-lang/http/"
+    source: git
+    version: "1.2.0-wip"
   cupertino_http:
     dependency: "direct main"
     description:
@@ -107,6 +108,11 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   http:
     dependency: "direct main"
     description:
@@ -127,10 +133,10 @@ packages:
     dependency: transitive
     description:
       name: jni
-      sha256: "0d88790bdf7e298aa65a9094c62b58ea231169a2deb84f23defc7d7955885b43"
+      sha256: "499558e919997adfc45809a66caf0b95b91393e23289dd2826b152f8f04e6611"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.2"
+    version: "0.7.3"
   leak_tracker:
     dependency: transitive
     description:
@@ -267,6 +273,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
+  restart_app:
+    dependency: "direct main"
+    description:
+      name: restart_app
+      sha256: b37daeb1c02fcab30e19d9e30b6fdd215bd53577efd927042eb77cf6f09daadb
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -348,18 +362,18 @@ packages:
     dependency: transitive
     description:
       name: web
-      sha256: "1d9158c616048c38f712a6646e317a3426da10e884447626167240d45209cbad"
+      sha256: "97da13628db363c635202ad97068d47c5b8aa555808e7a9411963c533b449b27"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.5.1"
   win32:
     dependency: transitive
     description:
       name: win32
-      sha256: "464f5674532865248444b4c3daca12bd9bf2d7c47f759ce2617986e7229494a8"
+      sha256: "8cb58b45c47dcb42ab3651533626161d6b67a2921917d8d429791f76972b3480"
       url: "https://pub.dev"
     source: hosted
-    version: "5.2.0"
+    version: "5.3.0"
   xdg_directories:
     dependency: transitive
     description:
